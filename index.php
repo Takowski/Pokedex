@@ -12,7 +12,7 @@
             ini_set("display_errors", 1);
             $DB = new PDO("mysql:host=localhost;dbname=testJSON;charset=utf8", "root", "root");
 
-            $json = file_get_contents("./pokemon.json");
+            $json = file_get_contents("./data/pokemon.json");
             $json_decode = json_decode($json, true);
             $pokemon = $json_decode["pokemon"];
 
@@ -27,10 +27,6 @@
                 $spattack = $infos["spattack"];
                 $spdefense = $infos["spdefense"];
                 $speed = $infos["speed"];
-
-                echo '<pre>';
-                print_r($types);
-                echo '<pre>';
 
                 $query = "INSERT INTO `pokemon` (`id`, `name`, `type 1`, `type 2`, `hp`, `attack`, `defense`, `spattack`, `spdefense`, `speed`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
                 $prep = $DB->prepare($query);
@@ -51,25 +47,10 @@
                 $prep->bindValue(9, $spdefense, PDO::PARAM_INT);
                 $prep->bindValue(10, $speed, PDO::PARAM_INT);
                 
-
-
-
-                echo "<br />", $name;
-                echo "<br />", "#", $num;
-                /* echo "<br />", $img; */
-                        
-
                 $prep->execute();
 
                 $prep->closeCursor();
                 $prep = NULL;
-
-                echo "<br />", "HP : ", $hp;
-                echo "<br />", "Attack : ", $attack;
-                echo "<br />", "Defense : ", $defense;
-                echo "<br />", "Special Attack : ", $spattack;
-                echo "<br />", "Special Defense : ", $spdefense;
-                echo "<br />", "Speed : ", $speed, "<br />";
         }
         } 
         catch(Exception $e)
