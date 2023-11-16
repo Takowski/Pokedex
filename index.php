@@ -10,7 +10,7 @@
         try {
             error_reporting(E_ALL);
             ini_set("display_errors", 1);
-            $DB = new PDO("mysql:host=localhost;dbname=testJSON;charset=utf8", "root", "root");
+            $DB = new PDO("mysql:host=localhost;dbname=pokemon;charset=utf8", "root", "root");
 
             $json = file_get_contents("./data/pokemon.json");
             $json_decode = json_decode($json, true);
@@ -28,7 +28,7 @@
                 $spdefense = $infos["spdefense"];
                 $speed = $infos["speed"];
 
-                $query = "INSERT INTO `pokemon` (`id`, `name`, `type 1`, `type 2`, `hp`, `attack`, `defense`, `spattack`, `spdefense`, `speed`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+                $query = "INSERT INTO `Pokemon` (`id`, `name`, `type1`, `type2`, `hp`, `attack`, `defense`, `spattack`, `spdefense`, `speed`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
                 $prep = $DB->prepare($query);
 
                 $prep->bindValue(1, $num, PDO::PARAM_INT);
