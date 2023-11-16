@@ -1,0 +1,681 @@
+{
+    "pokemon":[
+       {
+        "num": "001",
+        "name": "Bulbasaur",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "spattack": 65,
+        "spdefense": 65,
+        "speed": 45
+       },
+       {
+        "num": "002",
+        "name": "Ivysaur",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "spattack": 80,
+        "spdefense": 80,
+        "speed": 60
+       },
+       {
+        "num": "003",
+        "name": "Venusaur",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "spattack": 100,
+        "spdefense": 100,
+        "speed": 80
+       },
+       {
+        "num": "004",
+        "name": "Charmander",
+        "img": "",
+        "type": "Fire",
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "spattack": 60,
+        "spdefense": 50,
+        "speed": 65
+       },
+       {
+        "num": "005",
+        "name": "Charmeleon",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "spattack": 80,
+        "spdefense": 65,
+        "speed": 80
+       },
+       {
+        "num": "006",
+        "name": "Charizard",
+        "img": "",
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "spattack": 109,
+        "spdefense": 85,
+        "speed": 100
+       },
+       {
+        "num": "007",
+        "name": "Squirtle",
+        "img": "",
+        "type": "Water",
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "spattack": 50,
+        "spdefense": 64,
+        "speed": 43
+       },
+       {
+        "num": "008",
+        "name": "Wartortle",
+        "img": "",
+        "type": "Water",
+        "hp": 59,
+        "attack": 63,
+        "defense": 80,
+        "spattack": 65,
+        "spdefense": 80,
+        "speed": 58
+       },
+       {
+        "num": "009",
+        "name": "Blastoise",
+        "img": "",
+        "type": "Water",
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "spattack": 85,
+        "spdefense": 105,
+        "speed": 78
+       },
+       {
+        "num": "010",
+        "name": "Caterpie",
+        "img": "",
+        "type": "Bug",
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "spattack": 20,
+        "spdefense": 20,
+        "speed": 45
+       },
+       {
+        "num": "011",
+        "name": "Metapod",
+        "img": "",
+        "type": "Bug",
+        "hp": 50,
+        "attack": 20,
+        "defense": 55,
+        "spattack": 25,
+        "spdefense": 25,
+        "speed": 30
+       },       {
+        "num": "012",
+        "name": "Butterfree",
+        "img": "",
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "spattack": 90,
+        "spdefense": 80,
+        "speed": 70
+       },
+       {
+        "num": "013",
+        "name": "Weedle",
+        "img": "",
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "spattack": 20,
+        "spdefense": 20,
+        "speed": 50
+       },
+       {
+        "num": "014",
+        "name": "Kakuna",
+        "img": "",
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "hp": 45,
+        "attack": 25,
+        "defense": 50,
+        "spattack": 25,
+        "spdefense": 25,
+        "speed": 35
+       },
+       {
+        "num": "015",
+        "name": "Beedrill",
+        "img": "",
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "spattack": 45,
+        "spdefense": 80,
+        "speed": 75
+       },
+       {
+        "num": "016",
+        "name": "Pidgey",
+        "img": "",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "spattack": 35,
+        "spdefense": 35,
+        "speed": 56
+       },
+       {
+        "num": "017",
+        "name": "Pidgeotto",
+        "img": "",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "hp": 63,
+        "attack": 60,
+        "defense": 55,
+        "spattack": 50,
+        "spdefense": 50,
+        "speed": 71
+       },
+       {
+        "num": "018",
+        "name": "Pidgeot",
+        "img": "",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "hp": 83,
+        "attack": 80,
+        "defense": 75,
+        "spattack": 70,
+        "spdefense": 70,
+        "speed": 101
+       },
+       {
+        "num": "019",
+        "name": "Rattata",
+        "img": "",
+        "type": "Normal",
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "spattack": 25,
+        "spdefense": 35,
+        "speed": 72
+       },
+       {
+        "num": "020",
+        "name": "Raticate",
+        "img": "",
+        "type": "Normal",
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "spattack": 50,
+        "spdefense": 70,
+        "speed": 97
+       },
+       {
+        "num": "021",
+        "name": "Spearow",
+        "img": "",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "hp": 40,
+        "attack": 60,
+        "defense": 30,
+        "spattack": 31,
+        "spdefense": 31,
+        "speed": 70
+       },
+       {
+        "num": "022",
+        "name": "Fearow",
+        "img": "",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "hp": 65,
+        "attack": 90,
+        "defense": 65,
+        "spattack": 61,
+        "spdefense": 61,
+        "speed": 100
+       },{
+        "num": "023",
+        "name": "Ekans",
+        "img": "",
+        "type": "Poison",
+        "hp": 35,
+        "attack": 60,
+        "defense": 44,
+        "spattack": 40,
+        "spdefense": 54,
+        "speed": 55
+       },
+       {
+        "num": "024",
+        "name": "Arbok",
+        "img": "",
+        "type": "Poison",
+        "hp": 60,
+        "attack": 95,
+        "defense": 69,
+        "spattack": 65,
+        "spdefense": 79,
+        "speed": 80
+       },
+       {
+        "num": "025",
+        "name": "Pikachu",
+        "img": "",
+        "type": "Bug",
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "spattack": 50,
+        "spdefense": 50,
+        "speed": 90
+       },
+       {
+        "num": "026",
+        "name": "Raichu",
+        "img": "",
+        "type": "Electric",
+        "hp": 60,
+        "attack": 90,
+        "defense": 55,
+        "spattack": 90,
+        "spdefense": 80,
+        "speed": 110
+       },
+       {
+        "num": "027",
+        "name": "Sandshrew",
+        "img": "",
+        "type": "Ground",
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "spattack": 20,
+        "spdefense": 30,
+        "speed": 40
+       },
+       {
+        "num": "028",
+        "name": "Sandslash",
+        "img": "",
+        "type": "Ground",
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "spattack": 45,
+        "spdefense": 55,
+        "speed": 65
+       },
+       {
+        "num": "029",
+        "name": "Nidoran",
+        "img": "",
+        "type": "Poison",
+        "hp": 55,
+        "attack": 47,
+        "defense": 52,
+        "spattack": 40,
+        "spdefense": 40,
+        "speed": 41
+       },
+       {
+        "num": "030",
+        "name": "Nidorina",
+        "img": "",
+        "type": "Poison",
+        "hp": 70,
+        "attack": 62,
+        "defense": 67,
+        "spattack": 55,
+        "spdefense": 55,
+        "speed": 56
+       },
+       {
+        "num": "031",
+        "name": "Nidoqueen",
+        "img": "",
+        "type": [
+            "Poison",
+            "Ground"
+        ],
+        "hp": 90,
+        "attack": 92,
+        "defense": 87,
+        "spattack": 75,
+        "spdefense": 85,
+        "speed": 76
+       },
+       {
+        "num": "032",
+        "name": "Nidoran ♂",
+        "img": "",
+        "type": "Poison",
+        "hp": 46,
+        "attack": 57,
+        "defense": 40,
+        "spattack": 40,
+        "spdefense": 40,
+        "speed": 50
+       },
+       {
+        "num": "033",
+        "name": "Nidorino",
+        "img": "",
+        "type": "Poison",
+        "hp": 61,
+        "attack": 72,
+        "defense": 57,
+        "spattack": 55,
+        "spdefense": 55,
+        "speed": 65
+       },
+       {
+        "num": "034",
+        "name": "Nidoking",
+        "img": "",
+        "type": [
+            "Poison",
+            "Ground"
+        ],
+        "hp": 81,
+        "attack": 102,
+        "defense": 77,
+        "spattack": 85,
+        "spdefense": 75,
+        "speed": 85
+       },
+       {
+        "num": "035",
+        "name": "Clefairy",
+        "img": "",
+        "type": "Fairy",
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "spattack": 60,
+        "spdefense": 65,
+        "speed": 35
+       },
+       {
+        "num": "036",
+        "name": "Clefable",
+        "img": "",
+        "type": "Fairy",
+        "hp": 95,
+        "attack": 70,
+        "defense": 73,
+        "spattack": 95,
+        "spdefense": 90,
+        "speed": 60
+       },       {
+        "num": "037",
+        "name": "Vulpix",
+        "img": "",
+        "type": "Fire",
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "spattack": 50,
+        "spdefense": 65,
+        "speed": 65
+       },
+       {
+        "num": "038",
+        "name": "Ninetales",
+        "img": "",
+        "type": "Fire",
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "spattack": 81,
+        "spdefense": 100,
+        "speed": 100
+       },
+       {
+        "num": "039",
+        "name": "Jigglypuff",
+        "img": "",
+        "type": [
+            "Normal",
+            "Fairy"
+        ],
+        "hp": 115,
+        "attack": 45,
+        "defense": 20,
+        "spattack": 45,
+        "spdefense": 25,
+        "speed": 20
+       },
+       {
+        "num": "040",
+        "name": "Wigglytuff",
+        "img": "",
+        "type": [
+            "Normal",
+            "Fairy"
+        ],
+        "hp": 140,
+        "attack": 70,
+        "defense": 45,
+        "spattack": 85,
+        "spdefense": 50,
+        "speed": 45
+       },
+       {
+        "num": "041",
+        "name": "Zubat",
+        "img": "",
+        "type": [
+            "Poison",
+            "Flying"
+        ],
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "spattack": 30,
+        "spdefense": 40,
+        "speed": 55
+       },
+       {
+        "num": "042",
+        "name": "Golbat",
+        "img": "",
+        "type": [
+            "Poison",
+            "Flying"
+        ],
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "spattack": 65,
+        "spdefense": 75,
+        "speed": 90
+       },
+       {
+        "num": "043",
+        "name": "Oddish",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "spattack": 75,
+        "spdefense": 65,
+        "speed": 30
+       },
+       {
+        "num": "044",
+        "name": "Gloom",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 60,
+        "attack": 65,
+        "defense": 70,
+        "spattack": 85,
+        "spdefense": 75,
+        "speed": 40
+       },
+       {
+        "num": "045",
+        "name": "Vileplume",
+        "img": "",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "spattack": 110,
+        "spdefense": 90,
+        "speed": 50
+       },
+       {
+        "num": "046",
+        "name": "Paras",
+        "img": "",
+        "type": [
+            "Bug",
+            "Grass"
+        ],
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "spattack": 45,
+        "spdefense": 55,
+        "speed": 25
+       },
+       {
+        "num": "047",
+        "name": "Parasect",
+        "img": "",
+        "type": [
+            "Bug",
+            "Grass"
+        ],
+        "hp": 60,
+        "attack": 95,
+        "defense": 80,
+        "spattack": 60,
+        "spdefense": 80,
+        "speed": 30
+       },{
+        "num": "048",
+        "name": "Venonat",
+        "img": "",
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "spattack": 40,
+        "spdefense": 55,
+        "speed": 45
+       },
+       {
+        "num": "049",
+        "name": "Venomoth",
+        "img": "",
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "hp": 70,
+        "attack": 65,
+        "defense": 60,
+        "spattack": 90,
+        "spdefense": 75,
+        "speed": 90
+       },
+       {
+        "num": "050",
+        "name": "Diglett",
+        "img": "",
+        "type": "Ground",
+        "hp": 10,
+        "attack": 55,
+        "defense": 25,
+        "spattack": 35,
+        "spdefense": 45,
+        "speed": 95
+       }
+    ]  
+}
