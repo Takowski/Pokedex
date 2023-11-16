@@ -1,0 +1,736 @@
+{
+    "pokemon":[
+       {
+        "num": "101",
+        "name": "Electrode",
+        "img": "",
+        "type": [
+            "Electric"
+        ],
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "spattack": 80,
+        "spdefense": 80,
+        "speed": 150
+       },
+       {
+        "num": "102",
+        "name": "Exeggcute",
+        "img": "",
+        "type": [
+            "Grass",
+            "Psychic"
+        ],
+        "hp": 60,
+        "attack": 40,
+        "defense": 80,
+        "spattack": 60,
+        "spdefense": 45,
+        "speed": 40
+       },
+       {
+        "num": "103",
+        "name": "Exeggutor",
+        "img": "",
+        "type": [
+            "Grass",
+            "Psychic"
+        ],
+        "hp": 95,
+        "attack": 95,
+        "defense": 85,
+        "spattack": 125,
+        "spdefense": 75,
+        "speed": 55
+       },
+       {
+        "num": "104",
+        "name": "Cubone",
+        "img": "",
+        "type": [
+            "Ground"
+        ],
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "spattack": 40,
+        "spdefense": 50,
+        "speed": 35
+       },
+       {
+        "num": "105",
+        "name": "Marowak",
+        "img": "",
+        "type": [
+            "Ground"
+        ],
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "spattack": 50,
+        "spdefense": 80,
+        "speed": 45
+       },
+       {
+        "num": "106",
+        "name": "Hitmonlee",
+        "img": "",
+        "type": [
+            "Fighting"
+        ],
+        "hp": 50,
+        "attack": 120,
+        "defense": 53,
+        "spattack": 35,
+        "spdefense": 110,
+        "speed": 87
+       },
+       {
+        "num": "107",
+        "name": "Hitmonchan",
+        "img": "",
+        "type": [
+            "Fighting"
+        ],
+        "hp": 50,
+        "attack": 105,
+        "defense": 79,
+        "spattack": 35,
+        "spdefense": 110,
+        "speed": 76
+       },
+       {
+        "num": "108",
+        "name": "Lickitung",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 90,
+        "attack": 55,
+        "defense": 75,
+        "spattack": 60,
+        "spdefense": 75,
+        "speed": 30
+       },
+       {
+        "num": "109",
+        "name": "Koffing",
+        "img": "",
+        "type": [
+            "Poison"
+        ],
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "spattack": 60,
+        "spdefense": 45,
+        "speed": 35
+       },
+       {
+        "num": "110",
+        "name": "Weezing",
+        "img": "",
+        "type": [
+            "Poison"
+        ],
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "spattack": 85,
+        "spdefense": 70,
+        "speed": 60
+       },
+       {
+        "num": "111",
+        "name": "Rhyhorn",
+        "img": "",
+        "type": [
+            "Ground",
+            "Rock"
+        ],
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "spattack": 30,
+        "spdefense": 30,
+        "speed": 25
+       },
+       {
+        "num": "112",
+        "name": "Rhydon",
+        "img": "",
+        "type": [
+            "Ground",
+            "Rock"
+        ],
+        "hp": 105,
+        "attack": 130,
+        "defense": 120,
+        "spattack": 45,
+        "spdefense": 45,
+        "speed": 40
+       },
+       {
+        "num": "113",
+        "name": "Chansey",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "spattack": 35,
+        "spdefense": 105,
+        "speed": 50
+       },
+       {
+        "num": "114",
+        "name": "Tangela",
+        "img": "",
+        "type": [
+            "Grass"
+        ],
+        "hp": 65,
+        "attack": 55,
+        "defense": 115,
+        "spattack": 100,
+        "spdefense": 40,
+        "speed": 60
+       },
+       {
+        "num": "115",
+        "name": "Kangaskhan",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "spattack": 40,
+        "spdefense": 80,
+        "speed": 90
+       },
+       {
+        "num": "116",
+        "name": "Horsea",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 30,
+        "attack": 40,
+        "defense": 70,
+        "spattack": 70,
+        "spdefense": 25,
+        "speed": 60
+       },
+       {
+        "num": "117",
+        "name": "Seadra",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 55,
+        "attack": 65,
+        "defense": 95,
+        "spattack": 95,
+        "spdefense": 45,
+        "speed": 85
+       },
+       {
+        "num": "118",
+        "name": "Goldeen",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "spattack": 35,
+        "spdefense": 50,
+        "speed": 63
+       },
+       {
+        "num": "119",
+        "name": "Seaking",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "spattack": 65,
+        "spdefense": 80,
+        "speed": 68
+       },
+       {
+        "num": "120",
+        "name": "Staryu",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 30,
+        "attack": 45,
+        "defense": 55,
+        "spattack": 70,
+        "spdefense": 55,
+        "speed": 85
+       },
+       {
+        "num": "121",
+        "name": "Starmie",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 60,
+        "attack": 75,
+        "defense": 85,
+        "spattack": 100,
+        "spdefense": 85,
+        "speed": 115
+       },
+       {
+        "num": "122",
+        "name": "Mr. Mime",
+        "img": "",
+        "type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "hp": 40,
+        "attack": 45,
+        "defense": 65,
+        "spattack": 100,
+        "spdefense": 120,
+        "speed": 90
+       },
+       {
+        "num": "123",
+        "name": "Scyther",
+        "img": "",
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "hp": 70,
+        "attack": 110,
+        "defense": 80,
+        "spattack": 55,
+        "spdefense": 80,
+        "speed": 105
+       },
+       {
+        "num": "124",
+        "name": "Jynx",
+        "img": "",
+        "type": [
+            "Ice",
+            "Psychic"
+        ],
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "spattack": 115,
+        "spdefense": 95,
+        "speed": 95
+       },
+       {
+        "num": "125",
+        "name": "Electabuzz",
+        "img": "",
+        "type": [
+            "Electric"
+        ],
+        "hp": 65,
+        "attack": 83,
+        "defense": 57,
+        "spattack": 95,
+        "spdefense": 85,
+        "speed": 105
+       },
+       {
+        "num": "126",
+        "name": "Magmar",
+        "img": "",
+        "type": [
+            "Fire"
+        ],
+        "hp": 65,
+        "attack": 95,
+        "defense": 57,
+        "spattack": 100,
+        "spdefense": 85,
+        "speed": 93
+       },
+       {
+        "num": "127",
+        "name": "Pinsir",
+        "img": "",
+        "type": [
+            "Bug"
+        ],
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "spattack": 55,
+        "spdefense": 70,
+        "speed": 85
+       },
+       {
+        "num": "128",
+        "name": "Tauros",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 75,
+        "attack": 100,
+        "defense": 95,
+        "spattack": 40,
+        "spdefense": 70,
+        "speed": 110
+       },
+       {
+        "num": "129",
+        "name": "Magikarp",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "spattack": 15,
+        "spdefense": 20,
+        "speed": 80
+       },
+       {
+        "num": "130",
+        "name": "Gyarados",
+        "img": "",
+        "type": [
+            "Water",
+            "Flying"
+        ],
+        "hp": 95,
+        "attack": 125,
+        "defense": 79,
+        "spattack": 60,
+        "spdefense": 100,
+        "speed": 81
+       },
+       {
+        "num": "131",
+        "name": "Lapras",
+        "img": "",
+        "type": [
+            "Water",
+            "Ice"
+        ],
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "spattack": 85,
+        "spdefense": 95,
+        "speed": 60
+       },
+       {
+        "num": "132",
+        "name": "Ditto",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "spattack": 48,
+        "spdefense": 48,
+        "speed": 48
+       },
+       {
+        "num": "133",
+        "name": "Eevee",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "spattack": 45,
+        "spdefense": 65,
+        "speed": 55
+       },
+       {
+        "num": "134",
+        "name": "Vaporeon",
+        "img": "",
+        "type": [
+            "Water"
+        ],
+        "hp": 130,
+        "attack": 65,
+        "defense": 60,
+        "spattack": 110,
+        "spdefense": 95,
+        "speed": 65
+       },
+       {
+        "num": "135",
+        "name": "Jolteon",
+        "img": "",
+        "type": [
+            "Electric"
+        ],
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "spattack": 110,
+        "spdefense": 95,
+        "speed": 130
+       },
+       {
+        "num": "136",
+        "name": "Flareon",
+        "img": "",
+        "type": [
+            "Fire"
+        ],
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "spattack": 95,
+        "spdefense": 110,
+        "speed": 65
+       },
+       {
+        "num": "137",
+        "name": "Porygon",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 65,
+        "attack": 60,
+        "defense": 70,
+        "spattack": 85,
+        "spdefense": 75,
+        "speed": 40
+       },
+       {
+        "num": "138",
+        "name": "Omanyte",
+        "img": "",
+        "type": [
+            "Rock",
+            "Water"
+        ],
+        "hp": 35,
+        "attack": 40,
+        "defense": 100,
+        "spattack": 90,
+        "spdefense": 55,
+        "speed": 35
+       },
+       {
+        "num": "139",
+        "name": "Omastar",
+        "img": "",
+        "type": [
+            "Rock",
+            "Water"
+        ],
+        "hp": 70,
+        "attack": 60,
+        "defense": 125,
+        "spattack": 115,
+        "spdefense": 70,
+        "speed": 55
+       },
+       {
+        "num": "140",
+        "name": "Kabuto",
+        "img": "",
+        "type": [
+            "Rock",
+            "Water"
+        ],
+        "hp": 30,
+        "attack": 80,
+        "defense": 90,
+        "spattack": 55,
+        "spdefense": 45,
+        "speed": 55
+       },
+       {
+        "num": "141",
+        "name": "Kabutops",
+        "img": "",
+        "type": [
+            "Rock",
+            "Water"
+        ],
+        "hp": 60,
+        "attack": 115,
+        "defense": 105,
+        "spattack": 65,
+        "spdefense": 70,
+        "speed": 80
+       },
+       {
+        "num": "142",
+        "name": "Aerodactyl",
+        "img": "",
+        "type": [
+            "Rock",
+            "Flying"
+        ],
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "spattack": 60,
+        "spdefense": 75,
+        "speed": 130
+       },
+       {
+        "num": "143",
+        "name": "Snorlax",
+        "img": "",
+        "type": [
+            "Normal"
+        ],
+        "hp": 160,
+        "attack": 110,
+        "defense": 65,
+        "spattack": 65,
+        "spdefense": 110,
+        "speed": 30
+       },
+       {
+        "num": "144",
+        "name": "Articuno",
+        "img": "",
+        "type": [
+            "Ice",
+            "Flying"
+        ],
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "spattack": 95,
+        "spdefense": 125,
+        "speed": 85
+       },
+       {
+        "num": "145",
+        "name": "Zapdos",
+        "img": "",
+        "type": [
+            "Electric",
+            "Flying"
+        ],
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "spattack": 125,
+        "spdefense": 90,
+        "speed": 100
+       },
+       {
+        "num": "146",
+        "name": "Moltres",
+        "img": "",
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "spattack": 125,
+        "spdefense": 85,
+        "speed": 90
+       },
+       {
+        "num": "147",
+        "name": "Dratini",
+        "img": "",
+        "type": [
+            "Dragon"
+        ],
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "spattack": 50,
+        "spdefense": 50,
+        "speed": 50
+       },
+       {
+        "num": "148",
+        "name": "Dragonair",
+        "img": "",
+        "type": [
+            "Dragon"
+        ],
+        "hp": 61,
+        "attack": 84,
+        "defense": 65,
+        "spattack": 70,
+        "spdefense": 70,
+        "speed": 70
+       },
+       {
+        "num": "149",
+        "name": "Dragonite",
+        "img": "",
+        "type": [
+            "Dragon",
+            "Flying"
+        ],
+        "hp": 91,
+        "attack": 134,
+        "defense": 95,
+        "spattack": 100,
+        "spdefense": 100,
+        "speed": 80
+       },
+       {
+        "num": "150",
+        "name": "Mewtwo",
+        "img": "",
+        "type": [
+            "Psychic"
+        ],
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "spattack": 154,
+        "spdefense": 90,
+        "speed": 130
+       },
+       {
+        "num": "151",
+        "name": "Mew",
+        "img": "",
+        "type": [
+            "Psychic"
+        ],
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "spattack": 100,
+        "spdefense": 100,
+        "speed": 100
+       }
+    ]
+}
