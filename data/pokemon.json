@@ -723,6 +723,770 @@
         "spdefense": 45,
         "speed": 95
         },
+        {
+            "num": "0051",
+            "name": "Dugtrio",
+            "img": "",
+            "type": [
+                "Ground"
+            ],
+            "hp": 35,
+            "attack": 100,
+            "defense": 50,
+            "spattack": 50,
+            "spdefense": 70,
+            "speed": 120
+           },
+           {
+            "num": "0052",
+            "name": "Meowth",
+            "img": "",
+            "type": [
+                "Normal"
+            ],
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "spattack": 40,
+            "spdefense": 40,
+            "speed": 90
+           },
+           {
+            "num": "0053",
+            "name": "Persian",
+            "img": "",
+            "type": [
+                "Normal"
+            ],
+            "hp": 65,
+            "attack": 70,
+            "defense": 60,
+            "spattack": 65,
+            "spdefense": 65,
+            "speed": 115
+           },
+    
+           {
+            "num": "0054",
+            "name": "Psyduck",
+            "img": "",
+            "type": [
+                "WATER"
+            ],
+            "hp": 50,
+            "attack": 52,
+            "defense": 48,
+            "spattack": 65,
+            "spdefense": 50,
+            "speed": 55
+           },
+           {
+            "num": "0055",
+            "name": "Golduck",
+            "img": "",
+            "type": [
+                "WATER"
+            ],
+            "hp": 80,
+            "attack": 82,
+            "defense": 78,
+            "spattack": 95,
+            "spdefense": 80,
+            "speed": 85
+           },
+    
+           {
+            "num": "0056",
+            "name": "Mankey",
+            "img": "",
+            "type": [
+                "FIGHTING"
+            ],
+            "hp": 40,
+            "attack": 80,
+            "defense": 35,
+            "spattack": 35,
+            "spdefense": 45,
+            "speed": 70
+           },
+           
+           {
+            "num": "0057",
+            "name": "Primeape",
+            "img": "",
+            "type": [
+                "FIGHTING"
+            ],
+            "hp": 65,
+            "attack": 105,
+            "defense": 60,
+            "spattack": 60,
+            "spdefense": 70,
+            "speed": 95
+           },
+           {
+            "num": "0058",
+            "name": "Growlithe",
+            "img": "",
+            "type": [
+                "Fire"
+            ],
+            "hp": 55,
+            "attack": 70,
+            "defense": 45,
+            "spattack": 70,
+            "spdefense": 50,
+            "speed": 60
+           },
+    
+           {
+            "num": "0059",
+            "name": "Arcanine",
+            "img": "",
+            "type": [
+               "Fire"
+            ],
+            "hp": 90,
+            "attack": 110,
+            "defense": 80,
+            "spattack": 100,
+            "spdefense": 80,
+            "speed": 95
+           },
+           {
+            "num": "0060",
+            "name": "Poliwag",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 40,
+            "attack": 50,
+            "defense": 40,
+            "spattack": 40,
+            "spdefense": 40,
+            "speed": 90
+           },
+           {
+            "num": "0061",
+            "name": "Poliwhirl",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 65,
+            "attack": 65,
+            "defense": 65,
+            "spattack": 50,
+            "spdefense": 50,
+            "speed": 90
+           },
+    
+           {
+            "num": "0062",
+            "name": "Poliwrath",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 90,
+            "attack": 95,
+            "defense": 95,
+            "spattack": 70,
+            "spdefense": 90,
+            "speed": 70
+           },
+           {
+            "num": "0063",
+            "name": "Abra",
+            "img": "",
+            "type": [
+               "PSYCHIC"
+            ],
+            "hp": 15,
+            "attack": 20,
+            "defense": 15,
+            "spattack": 105,
+            "spdefense": 55,
+            "speed": 90
+           },
+           {
+            "num": "0064",
+            "name": "Kadabra",
+            "img": "",
+            "type": [
+               "Psychic"
+            ],
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "spattack": 120,
+            "spdefense": 70,
+            "speed": 105
+           },
+    
+           {
+            "num": "0065",
+            "name": "Alakazam",
+            "img": "",
+            "type": [
+               "Psychic"
+            ],
+            "hp": 55,
+            "attack": 50,
+            "defense": 45,
+            "spattack": 135,
+            "spdefense": 95,
+            "speed": 120
+           },
+           {
+            "num": "0066",
+            "name": "Machop",
+            "img": "",
+            "type": [
+               "FIGHTING"
+            ],
+            "hp": 70,
+            "attack": 80,
+            "defense": 50,
+            "spattack": 35,
+            "spdefense": 35,
+            "speed": 35
+           },
+           {
+            "num": "0067",
+            "name": "Machoke",
+            "img": "",
+            "type": [
+               "FIGHTING"
+            ],
+            "hp": 80,
+            "attack": 100,
+            "defense": 70,
+            "spattack": 50,
+            "spdefense": 60,
+            "speed": 45
+        },
+    
+        {
+            "num": "0068",
+            "name": "Machamp",
+            "img": "",
+            "type": [
+               "FIGHTING"
+            ],
+            "hp": 90,
+            "attack": 130,
+            "defense": 80,
+            "spattack": 65,
+            "spdefense": 85,
+            "speed": 55
+        },
+    
+        {
+            "num": "0069",
+            "name": "Bellsprout",
+            "img": "",
+            "type": [
+               "FIGHTING"
+            ],
+            "hp": 50,
+            "attack": 75,
+            "defense": 35,
+            "spattack": 70,
+            "spdefense": 30,
+            "speed": 40
+        },
+    
+        {
+            "num": "0070",
+            "name": "Weepinbell",
+            "img": "",
+            "type": [
+               "GRASS",
+               "POISON"
+            ],
+            "hp": 65,
+            "attack": 90,
+            "defense": 50,
+            "spattack": 85,
+            "spdefense": 45,
+            "speed": 55
+        },
+    
+        {
+            "num": "0071",
+            "name": "Victreebel",
+            "img": "",
+            "type": [
+               "GRASS",
+               "POISON"
+            ],
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "spattack": 100,
+            "spdefense": 70,
+            "speed": 70
+        },
+    
+        {
+            "num": "0072",
+            "name": "Tentacool",
+            "img": "",
+            "type": [
+               "WATER",
+               "POISON"
+            ],
+            "hp": 40,
+            "attack": 40,
+            "defense": 35,
+            "spattack": 50,
+            "spdefense": 100,
+            "speed": 70
+        },
+    
+        {
+            "num": "0073",
+            "name": "Tentacruel",
+            "img": "",
+            "type": [
+               "WATER",
+               "POISON"
+            ],
+            "hp": 80,
+            "attack": 70,
+            "defense": 65,
+            "spattack": 80,
+            "spdefense": 120,
+            "speed": 100
+        },
+    
+        {
+            "num": "0074",
+            "name": "Geodude",
+            "img": "",
+            "type": [
+               "ROCK",
+               "GROUND"
+            ],
+            "hp": 40,
+            "attack": 80,
+            "defense": 100,
+            "spattack": 30,
+            "spdefense": 30,
+            "speed": 20
+        },
+        
+    
+        {
+            "num": "0075",
+            "name": "Graveler",
+            "img": "",
+            "type": [
+               "ROCK",
+               "GROUND"
+            ],
+            "hp": 55,
+            "attack": 95,
+            "defense": 115,
+            "spattack": 45,
+            "spdefense": 45,
+            "speed": 35
+        },
+    
+        {
+            "num": "0076",
+            "name": "Golem",
+            "img": "",
+            "type": [
+               "ROCK",
+               "GROUND"
+            ],
+            "hp": 80,
+            "attack": 120,
+            "defense": 130,
+            "spattack": 55,
+            "spdefense": 65,
+            "speed": 45
+        },
+    
+        {
+            "num": "0077",
+            "name": "Ponyta",
+            "img": "",
+            "type": [
+               "FIRE"
+            ],
+            "hp": 50,
+            "attack": 85,
+            "defense": 55,
+            "spattack": 65,
+            "spdefense": 65,
+            "speed": 90
+        },
+    
+        {
+            "num": "0078",
+            "name": "Rapidash",
+            "img": "",
+            "type": [
+               "FIRE"
+            ],
+            "hp": 65,
+            "attack": 100,
+            "defense": 70,
+            "spattack": 80,
+            "spdefense": 80,
+            "speed": 105
+        },
+    
+    
+        {
+            "num": "0079",
+            "name": "Slowpoke",
+            "img": "",
+            "type": [
+               "WATER",
+               "PSYCHIC"
+            ],
+            "hp": 90,
+            "attack": 65,
+            "defense": 65,
+            "spattack": 40,
+            "spdefense": 40,
+            "speed": 15
+        },
+    
+        {
+            "num": "0080",
+            "name": "Slowbro",
+            "img": "",
+            "type": [
+               "WATER",
+               "PSYCHIC"
+            ],
+            "hp": 95,
+            "attack": 75,
+            "defense": 110,
+            "spattack": 100,
+            "spdefense": 80,
+            "speed": 30
+        },
+    
+        {
+            "num": "0081",
+            "name": "Magnemite",
+            "img": "",
+            "type": [
+               "ELECTRIC",
+               "STEEL"
+            ],
+            "hp": 25,
+            "attack": 35,
+            "defense": 70,
+            "spattack": 95,
+            "spdefense": 55,
+            "speed": 45
+        },
+    
+        {
+            "num": "0082",
+            "name": "Magneton",
+            "img": "",
+            "type": [
+               "ELECTRIC",
+               "STEEL"
+            ],
+            "hp": 50,
+            "attack": 60,
+            "defense": 95,
+            "spattack": 120,
+            "spdefense": 70,
+            "speed": 70
+        },
+    
+        {
+            "num": "0083",
+            "name": "Farfetch'd",
+            "img": "",
+            "type": [
+               "NORMAL",
+               "FLYING"
+            ],
+            "hp": 52,
+            "attack": 90,
+            "defense": 55,
+            "spattack": 58,
+            "spdefense": 62,
+            "speed": 60
+        },
+    
+        {
+            "num": "0084",
+            "name": "Doduo",
+            "img": "",
+            "type": [
+               "NORMAL",
+               "FLYING"
+            ],
+            "hp": 35,
+            "attack": 85,
+            "defense": 45,
+            "spattack": 35,
+            "spdefense": 35,
+            "speed": 75
+        },
+    
+        {
+            "num": "0085",
+            "name": "Dodrio",
+            "img": "",
+            "type": [
+               "NORMAL",
+               "FLYING"
+            ],
+            "hp": 60,
+            "attack": 110,
+            "defense": 70,
+            "spattack": 60,
+            "spdefense": 60,
+            "speed": 100
+        },
+    
+        {
+            "num": "0086",
+            "name": "Seel",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 65,
+            "attack": 45,
+            "defense": 55,
+            "spattack": 45,
+            "spdefense": 70,
+            "speed": 45
+        },
+        
+        {
+            "num": "0087",
+            "name": "Dewgong",
+            "img": "",
+            "type": [
+               "WATER",
+                "ice"
+            ],
+            "hp": 90,
+            "attack": 70,
+            "defense": 80,
+            "spattack": 70,
+            "spdefense": 95,
+            "speed": 70
+        },
+    
+        {
+            "num": "0088",
+            "name": "Grimer",
+            "img": "",
+            "type": [
+               "POISON"
+            ],
+            "hp": 80,
+            "attack": 80,
+            "defense": 50,
+            "spattack": 40,
+            "spdefense": 50,
+            "speed": 25
+        },
+    
+        {
+            "num": "0089",
+            "name": "Muk",
+            "img": "",
+            "type": [
+               "POISON"
+            ],
+            "hp": 105,
+            "attack": 105,
+            "defense": 75,
+            "spattack": 65,
+            "spdefense": 100,
+            "speed": 50
+        },
+    
+        {
+            "num": "0090",
+            "name": "Shellder",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 30,
+            "attack": 65,
+            "defense": 100,
+            "spattack": 45,
+            "spdefense": 25,
+            "speed": 40
+        },
+    
+        {
+            "num": "0091",
+            "name": "Cloyster",
+            "img": "",
+            "type": [
+               "WATER",
+               "ICE"
+            ],
+            "hp": 50,
+            "attack": 95,
+            "defense": 180,
+            "spattack": 85,
+            "spdefense": 45,
+            "speed": 70
+        },
+    
+        {
+            "num": "0092",
+            "name": "Gastly",
+            "img": "",
+            "type": [
+               "GHOST",
+               "POISON"
+            ],
+            "hp": 30,
+            "attack": 35,
+            "defense": 30,
+            "spattack": 100,
+            "spdefense": 35,
+            "speed": 80
+        },
+    
+        {
+            "num": "0093",
+            "name": "Haunter",
+            "img": "",
+            "type": [
+               "GHOST",
+               "POISON"
+            ],
+            "hp": 45,
+            "attack": 50,
+            "defense": 45,
+            "spattack": 115,
+            "spdefense": 55,
+            "speed": 95
+        },
+    
+        {
+            "num": "0094",
+            "name": "Gengar",
+            "img": "",
+            "type": [
+               "GHOST",
+               "POISON"
+            ],
+            "hp": 60,
+            "attack": 65,
+            "defense": 60,
+            "spattack": 130,
+            "spdefense": 75,
+            "speed": 110
+        },
+    
+        {
+            "num": "0095",
+            "name": "Onix",
+            "img": "",
+            "type": [
+               "ROCK",
+               "GROUND"
+            ],
+            "hp": 35,
+            "attack": 45,
+            "defense": 160,
+            "spattack": 30,
+            "spdefense": 45,
+            "speed": 70
+        },
+    
+        {
+            "num": "0096",
+            "name": "Drowzee",
+            "img": "",
+            "type": [
+               "PSYCHIC"
+            ],
+            "hp": 60,
+            "attack": 48,
+            "defense": 45,
+            "spattack": 43,
+            "spdefense": 90,
+            "speed": 42
+        },
+    
+        {
+            "num": "0097",
+            "name": "Hypno",
+            "img": "",
+            "type": [
+               "PSYCHIC"
+            ],
+            "hp": 85,
+            "attack": 73,
+            "defense": 70,
+            "spattack": 73,
+            "spdefense": 115,
+            "speed": 67
+        },
+    
+        {
+            "num": "0098",
+            "name": "Krabby",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 30,
+            "attack": 105,
+            "defense": 90,
+            "spattack": 25,
+            "spdefense": 25,
+            "speed": 50
+        },
+    
+    
+        {
+            "num": "0099",
+            "name": "Kingler",
+            "img": "",
+            "type": [
+               "WATER"
+            ],
+            "hp": 55,
+            "attack": 130,
+            "defense": 115,
+            "spattack": 50,
+            "spdefense": 50,
+            "speed": 75
+        },
+    
+    
+        {
+            "num": "0100",
+            "name": "Voltorb",
+            "img": "",
+            "type": [
+               "ELECTRIC"
+            ],
+            "hp": 40,
+            "attack": 30,
+            "defense": 50,
+            "spattack": 55,
+            "spdefense": 55,
+            "speed": 100
+        },
+        
        {
         "num": "101",
         "name": "Electrode",
