@@ -1,6 +1,6 @@
 <?php
 // Simple Router
-
+require 'views/partials/header.php';
 // Include the helper file for handling requests
 require_once __DIR__.'/helpers/request.php';
 
@@ -49,6 +49,22 @@ switch($url['path'])
             http_response_code(404);
         }
         break;
+
+        // Case: Handle /myaccount path
+        case '/myaccount':
+            // Check if the HTTP method is GET
+            if ($method == 'GET') {
+                // Include the 'account.php' file that contains the function
+                require_once 'controllers/account.php';
+                // Call the function to display the my account page
+                displayMyAccountPage();
+            } else {
+                // If the HTTP method is not GET, include the 'views/errors/404.php' file
+                require 'views/errors/404.php';
+                // Set HTTP response code to 404 Not Found
+                http_response_code(404);
+            }
+            break;    
 
     // Default case: Handle all other paths
     default:
