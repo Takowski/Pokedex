@@ -58,3 +58,5 @@ switch($url['path'])
         http_response_code(404);
         break;
 }
+
+include 'views/partials/footer.php';
