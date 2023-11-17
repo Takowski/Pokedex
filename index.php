@@ -3,7 +3,7 @@
 
 // Include the helper file for handling requests
 require_once __DIR__.'/helpers/request.php';
-include '/data/db.php';
+include './data/db.php';
 // Switch statement to handle different routes based on the path from the URL
 switch($url['path'])
 {
@@ -27,7 +27,9 @@ switch($url['path'])
             if(isset($result['name']) && !empty($result['name'])) {
                 
                 // If 'pokemon' parameter is set, include the 'views/show.php' file
-                require '/views/show.php';
+                require 'controllers/ShowController.php';
+                require 'views/show.php';
+                show();
 
             } else {
                 // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
