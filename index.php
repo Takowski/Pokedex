@@ -3,7 +3,7 @@
 
 // Include the helper file for handling requests
 require_once __DIR__.'/helpers/request.php';
-
+include '/data/db.php';
 // Switch statement to handle different routes based on the path from the URL
 switch($url['path'])
 {
@@ -27,16 +27,17 @@ switch($url['path'])
             if(isset($result['name']) && !empty($result['name'])) {
                 
                 // If 'pokemon' parameter is set, include the 'views/show.php' file
-                require './views/show.php';
+                require '/views/show.php';
+
             } else {
                 // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
-                require './views/errors/404.php';
+                require '/views/errors/404.php';
                 // Set HTTP response code to 404 Not Found
                 http_response_code(404);
             }
         }
         break;
-
+    
     // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
