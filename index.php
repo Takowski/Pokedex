@@ -36,6 +36,19 @@ switch($url['path'])
             }
         }
         break;
+                // Case: Handle /favorites path
+    case '/favorites':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'FavoritesController.php' file
+            require 'view/Favorites.php';    
+        } else {
+            // If the HTTP method is not GET, include the 'views/errors/404.php' file
+            require 'views/errors/404.php';
+            // Set HTTP response code to 404 Not Found
+            http_response_code(404);
+        }
+        break;
 
     // Default case: Handle all other paths
     default:
