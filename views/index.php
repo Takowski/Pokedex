@@ -20,9 +20,24 @@ require_once __DIR__.'/partials/header.php';
         
         foreach($fetch as $infos) {
             $name = str_replace(["'", ".", " "], "", strtolower($infos["name"]));
+            $id= $infos["id"];
+            $type1 = $infos["type1"];
+            $type2 = $infos["type2"];
             echo <<<EOD
                 <img src="../public/img/pokemon/$name.png" alt="$name Img" width="50px"><br />
+                <span>#$id</span><br />
+                <span>$name</name><br />
             EOD;
+            if($type2 != "NULL") {
+                echo <<<EOD
+                <span>$type1</name>
+                <span>$type2</name><br />
+                EOD;
+            } else {
+                echo <<<EOD
+                <span>$type1</name><br />
+                EOD;
+            }
         }
     }
     catch(Exception $e)
