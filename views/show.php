@@ -41,11 +41,27 @@ require './data/db.php';
                     <h3> {$infos["type2"]}</h3>
                     <ul>    
                         <li> HP: {$infos["hp"]}</li>
+                        <progress value="{$infos["hp"]}"
+                        max="100">
+                        </progress>
                         <li> Attack: {$infos["attack"]}</li>
+                        <progress value="{$infos["attack"]}"
+                        max="100">
+                        </progress>
                         <li> Defense: {$infos["defense"]}</li>
+                        <progress value="{$infos["defense"]}"
+                        max="100">
+                        </progress>
                         <li> Specific Defense: {$infos["spdefense"]}</li>
+                        <progress value="{$infos["spdefense"]}"
+                        max="100">
+                        </progress>
                         <li> Specific Attack: {$infos["spattack"]}</li>
+                        <progress value="{$infos["spattack"]}"
+                        max="100">
                         <li> Speed: {$infos["speed"]}</li>
+                        <progress value="{$infos["speed"]}"
+                        max="100">
                     </ul>
                 EOD;
             }
@@ -54,7 +70,7 @@ require './data/db.php';
     <div class="pokemonEvo">
         <h1>Evolution</h1>
         <?php
-            
+
             $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
             $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
             foreach($fetch as $infos) {
