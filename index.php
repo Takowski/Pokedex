@@ -41,7 +41,7 @@ switch($url['path'])
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Include the 'FavoritesController.php' file
-            require 'view/Favorites.php';    
+            require 'views/favorites.php';    
         } else {
             // If the HTTP method is not GET, include the 'views/errors/404.php' file
             require 'views/errors/404.php';
