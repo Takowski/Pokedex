@@ -27,10 +27,10 @@ switch($url['path'])
             if(isset($result['name']) && !empty($result['name'])) {
                 
                 // If 'pokemon' parameter is set, include the 'views/show.php' file
-                require 'views/show.php';
+                require './views/show.php';
             } else {
                 // If 'pokemon' parameter is not set, include the 'views/errors/404.php' file
-                require 'views/errors/404.php';
+                require './views/errors/404.php';
                 // Set HTTP response code to 404 Not Found
                 http_response_code(404);
             }
