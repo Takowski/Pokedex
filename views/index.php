@@ -3,6 +3,14 @@ $title = "Home";
 require_once __DIR__.'/partials/header.php';
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex - Homepage</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
 <main>
     <h1>Pokedex - Homepage</h1>
     <p>Hello  <strong><?php echo $user['name'] ?></p></strong>

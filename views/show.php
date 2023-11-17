@@ -54,6 +54,7 @@ require './data/db.php';
     <div class="pokemonEvo">
         <h1>Evolution</h1>
         <?php
+            
             $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
             $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
             foreach($fetch as $infos) {
