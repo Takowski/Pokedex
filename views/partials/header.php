@@ -11,8 +11,8 @@
 <body>
     <ul>
         <li><a href="/">Pokemon</a></li>
-        <li><a href="/myaccount">Myaccount</a></li>
-        <li><a href="index.php">register</a></li>
+        <li><a href="/account">Myaccount</a></li>
+        <li><a href="/favorites">register</a></li>
     </ul>
     </nav>
 </body>
