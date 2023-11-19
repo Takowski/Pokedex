@@ -1,4 +1,7 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 // Simple Router
 require 'views/partials/header.php';
 // Include the helper file for handling requests
@@ -67,6 +70,20 @@ switch ($url['path']) {
             http_response_code(404);
         }
         break;
+
+    case '/favorites':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'FavoritesController.php' file
+            require 'controllers/Favorites.php';
+            // Call the function to display the favorites page
+            favorites();
+        } else {
+            // If the HTTP method is not GET, include the 'views/errors/404.php' file
+            require 'views/errors/404.php';
+            // Set HTTP response code to 404 Not Found
+            http_response_code(404);
+        }    
 
         // Default case: Handle all other paths
     default:
