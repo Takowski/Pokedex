@@ -1,4 +1,5 @@
 <?php
+include './data/db.php';
 
 // Check if the 'url' function does not already exist
 if (!function_exists('url')) {
@@ -20,3 +21,5 @@ $url = url($_SERVER['REQUEST_URI']);
 
 // Get the request method (e.g., GET, POST) from the server environment
 $method = $_SERVER['REQUEST_METHOD'];
+
+

@@ -1,0 +1,14 @@
+@import "../components/_variables.scss";
+
+html {
+    background-color: $pokemonRed;
+}
+body {
+    background-color: $pokemonGray;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
