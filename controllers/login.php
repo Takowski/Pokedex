@@ -18,7 +18,7 @@ function loginUser($pdo, $email, $password)
         // If the user exists and the password is correct, set the user ID in the session
         $_SESSION['user_id'] = $user['id'];
         // Redirect to Myaccount.php
-        header('Location: Myaccount.php');
+        header('Location: ./views/myAccount.php');
         exit;
     } else {
         // If the user does not exist or the password is incorrect, show an error message

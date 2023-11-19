@@ -3,7 +3,7 @@
 try
 {
     // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=pokemon;charset=utf8', 'okly', 'Jdeveloper23');
+    $bdd = new PDO('mysql:host=localhost;dbname=pokemon;charset=utf8', 'root', 'root');
     echo "Connexion réussie !<br><br><br><br>";
 
 // Retrieve form data

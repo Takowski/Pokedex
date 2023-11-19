@@ -2,9 +2,9 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require_once 'accessdb.php';
-require_once 'loginform.php';
-require_once 'account.php';
+require_once './controllers/accessdb.php';
+require_once './controllers/loginform.php';
+require_once './controllers/account.php';
 
 // Check if the user is logged in
 if (isset($_SESSION['user_id'])) {

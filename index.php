@@ -39,11 +39,11 @@ switch ($url['path']) {
         }
         break;
         // Case: Handle /favorites path
-    case '/favorites':
+    case '/register':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Include the 'FavoritesController.php' file
-            require 'views/favorites.php';
+            require 'views/register.php';
         } else {
             // If the HTTP method is not GET, include the 'views/errors/404.php' file
             require 'views/errors/404.php';
@@ -53,11 +53,11 @@ switch ($url['path']) {
         break;
 
         // Case: Handle /myaccount path
-    case '/account':
+    case '/myAccount':
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Include the 'account.php' file that contains the function
-            require 'controllers/account.php';
+            require 'views/myAccount.php';
             // Call the function to display the my account page
 
         } else {
