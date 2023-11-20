@@ -93,9 +93,119 @@ body {
   font-size: 20px;
 }
 
+.pokemonDiv {
+  background-color: #F1F1F1;
+  width: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.pokemonDiv .Grass {
+  background-color: #49c05c;
+}
+.pokemonDiv .Poison {
+  background-color: #af60c5;
+}
+.pokemonDiv .Normal {
+  background-color: #89949c;
+}
+.pokemonDiv .Steel {
+  background-color: #4d8da1;
+}
+.pokemonDiv .Bug {
+  background-color: #88c437;
+}
+.pokemonDiv .Flying {
+  background-color: #87CEEB;
+}
+.pokemonDiv .Fire {
+  background-color: #fc9654;
+}
+.pokemonDiv .Fairy {
+  background-color: #f47fe1;
+}
+.pokemonDiv .Water {
+  background-color: #3b8bd2;
+}
+.pokemonDiv .Ground {
+  background-color: #e27144;
+}
+.pokemonDiv .Electric {
+  background-color: #fad340;
+}
+.pokemonDiv .Rock {
+  background-color: #c5b58a;
+}
+.pokemonDiv .Fighting {
+  background-color: #dc2f69;
+}
+.pokemonDiv .Psychic {
+  background-color: #ff6776;
+}
+.pokemonDiv .Ice {
+  background-color: #57cdbc;
+}
+.pokemonDiv .Ghost {
+  background-color: #4b65aa;
+}
+.pokemonDiv .Dragon {
+  background-color: #0068bf;
+}
+.pokemonDiv .types span {
+  width: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.pokemonDiv .name {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.pokeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
 .pokemonEvo {
+  margin-left: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
+}
+
+.evoImg {
+  border-radius: 50%;
+  padding: 7px;
+  width: 100px;
+  background-color: white;
+}
+
+.pokeName {
+  padding-bottom: 3rem;
+  position: relative;
+  bottom: -90px;
+  left: -19.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pokeStat {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

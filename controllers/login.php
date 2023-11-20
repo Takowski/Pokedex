@@ -14,7 +14,7 @@ function loginUser($pdo, $email, $password)
     $user = $stmt->fetch();
 
     // Check if the user exists and the password is correct
-    if ($user && $password === $user['password']) {
+    if ($user && password_verify($password, $user['password'])) {
         // If the user exists and the password is correct, set the user ID in the session
         $_SESSION['user_id'] = $user['id'];
         // Redirect to Myaccount.php
