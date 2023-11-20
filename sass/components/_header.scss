@@ -1,0 +1,32 @@
+@import '../components/variables';
+
+.navContent{
+    display : flex;
+    flex-direction: row;
+    justify-content : space-between;
+    align-items : center;
+
+    list-style: none;
+    gap: 50px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+  
+}
+#logo {
+    width : 300px;
+}
+.navItems{
+    text-decoration: none;
+
+    color: $pokemonDarkGray;
+    font-size: 1.5rem;
+}
+.navItems:hover{
+    color: $pokemonRed;
+    border: 1px solid $pokemonRed;
+    border-radius: 5px;
+    padding: 5px;
+}

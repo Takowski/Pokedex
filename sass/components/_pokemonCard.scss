@@ -1,90 +1,224 @@
 @import '../components/_variables.scss';
 
-.details {
-    text-decoration: none;
-    color: black;
-    background-color: $pokemonWhite;
-    width: 90%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    .pokemonDiv {
-        background-color: $pokemonWhite;
-        width: 90%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+@media only screen and (min-width: 370px) {
+    .bigDiv {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-        .Grass {
-            background-color: #49c05c;
-        }
-        .Poison {
-            background-color: #af60c5;
-        }
-        .Normal {
-            background-color: #89949c;
-        }
-        .Steel {
-            background-color: #4d8da1;
-        }
-        .Bug {
-            background-color: #88c437;
-        }
-        .Flying {
-            background-color: #87CEEB;
-        }
-        .Fire {
-            background-color: #fc9654;
-        }
-        .Fairy {
-            background-color: #f47fe1;
-        }
-        .Water {
-            background-color: #3b8bd2;
-        }
-        .Ground {
-            background-color: #e27144;
-        }
-        .Electric {
-            background-color: #fad340;
-        }
-        .Rock {
-            background-color: #c5b58a;
-        }
-        .Fighting {
-            background-color: #dc2f69;
-        }
-        .Psychic {
-            background-color: #ff6776;
-        }
-        .Ice {
-            background-color: #57cdbc;
-        }
-        .Ghost {
-            background-color: #4b65aa;
-        }
-        .Dragon {
-            background-color: #0068bf;
-        }
-        .types {
-            span {
-                width: 15px;
-                padding: 15px;
-                border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+        .details {
+            text-decoration: none;
+            color: black;
+            background-color: $pokemonWhite;
+            width: 90%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            .pokemonDiv {
+                background-color: $pokemonWhite;
+                width: 90%;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
+            }
+            .Grass {
+                background-color: #49c05c;
+            }
+            .Poison {
+                background-color: #af60c5;
+            }
+            .Normal {
+                background-color: #89949c;
+            }
+            .Steel {
+                background-color: #4d8da1;
+            }
+            .Bug {
+                background-color: #88c437;
+            }
+            .Flying {
+                background-color: #87CEEB;
+            }
+            .Fire {
+                background-color: #fc9654;
+            }
+            .Fairy {
+                background-color: #f47fe1;
+            }
+            .Water {
+                background-color: #3b8bd2;
+            }
+            .Ground {
+                background-color: #e27144;
+            }
+            .Electric {
+                background-color: #fad340;
+            }
+            .Rock {
+                background-color: #c5b58a;
+            }
+            .Fighting {
+                background-color: #dc2f69;
+            }
+            .Psychic {
+                background-color: #ff6776;
+            }
+            .Ice {
+                background-color: #57cdbc;
+            }
+            .Ghost {
+                background-color: #4b65aa;
+            }
+            .Dragon {
+                background-color: #0068bf;
+            }
+            .types {
+                span {
+                    width: 15px;
+                    padding: 15px;
+                    border-radius: 10px;
+                }
+            }
+            .name {
+                font-weight: 900;
+                font-size: 20px;
             }
         }
-        .name {
-            font-weight: 900;
-            font-size: 20px;
+    }
+    
+}
+@media only screen and (min-width: 1040px) {
+    .bigDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        .details {
+            box-shadow: black 5px 5px 10px;
+            text-decoration: none;
+            color: black;
+            background-color: $pokemonWhite;
+            padding-top: 2rem;
+            width: 20%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 20px;
+            .pokemonDiv {
+                background-color: $pokemonWhite;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 0.5rem;
+                img {
+                    width : 7rem;
+                }
+            }
+            .Grass {
+                background-color: #49c05c;
+                box-shadow: #49c05c 5px 5px 10px;
+            }
+            .Poison {
+                background-color: #af60c5;
+                box-shadow: #af60c5 5px 5px 10px;
+            }
+            .Normal {
+                background-color: #89949c;
+                box-shadow: #89949c 5px 5px 10px;
+            }
+            .Steel {
+                background-color: #4d8da1;
+                box-shadow: #4d8da1 5px 5px 10px;
+            }
+            .Bug {
+                background-color: #88c437;
+                box-shadow: #88c437 5px 5px 10px;
+            }
+            .Flying {
+                background-color: #87CEEB;
+                box-shadow: #87CEEB 5px 5px 10px;
+            }
+            .Fire {
+                background-color: #fc9654;
+                box-shadow: #fc9654 5px 5px 10px;
+            }
+            .Fairy {
+                background-color: #f47fe1;
+                box-shadow: #f47fe1 5px 5px 10px;
+            }
+            .Water {
+                background-color: #3b8bd2;
+                box-shadow: #3b8bd2 5px 5px 10px;
+            }
+            .Ground {
+                background-color: #e27144;
+                box-shadow: #e27144 5px 5px 10px;
+            }
+            .Electric {
+                background-color: #fad340;
+                box-shadow: #fad340 5px 5px 10px;
+            }
+            .Rock {
+                background-color: #c5b58a;
+                box-shadow: #c5b58a 5px 5px 10px;
+            }
+            .Fighting {
+                background-color: #dc2f69;
+                box-shadow: #dc2f69 5px 5px 10px;
+            }
+            .Psychic {
+                background-color: #ff6776;
+                box-shadow: #ff6776 5px 5px 10px;
+            }
+            .Ice {
+                background-color: #57cdbc;
+                box-shadow: #57cdbc 5px 5px 10px;
+            }
+            .Ghost {
+                background-color: #4b65aa;
+                box-shadow: #4b65aa 5px 5px 10px;
+            }
+            .Dragon {
+                background-color: #0068bf;
+                box-shadow: #0068bf 5px 5px 10px;
+            }
+            .types {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                span {
+                    width: 50px;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            }
+            .name {
+                font-weight: 900;
+                font-size: 20px;
+            }
         }
     }
+    
 }

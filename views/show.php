@@ -18,15 +18,16 @@ require './data/db.php';
 </head>
 
 <main>
+    <img class="pokedexDesign" src="./public/img/pokedex-design.png" alt="Pokedex Design">
 
-    <?php
-    $query = "SELECT * FROM Pokemon WHERE name = '$title'";
-    $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
-    foreach ($fetch as $infos) {
-        $id = $infos["id"];
-        $name = str_replace(["'", ".", " "], "", strtolower($infos["name"]));
-        echo <<<EOD
-                <img src="../public/img/pokemon/$name.png" alt="$name Img" width="500px"><br />
+    <?php 
+        $query = "SELECT * FROM Pokemon WHERE name = '$title'";
+        $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+        foreach($fetch as $infos) {
+            $id = $infos["id"];
+            $name = str_replace(["'", ".", " "], "", strtolower($infos["name"]));
+            echo <<<EOD
+                <img class="imgpoke" src="../public/img/pokemon/$name.png" alt="$name Img" width="500px"><br />
             EOD;
     }
     ?>
@@ -75,16 +76,16 @@ require './data/db.php';
             echo <<<EOD
                 <h1>{$infos["name"]}</h1> 
                 EOD;
-            if ($type2 != "NULL") {
-                echo <<<EOD
-                    <div class="types">
+                if($type2 != "NULL") {
+                    echo <<<EOD
+                    <div class="typesShow">
                         <span class=$type1>$type1</span>
                         <span class=$type2>$type2</span>
                     </div>
                     EOD;
-            } else {
-                echo <<<EOD
-                    <div class="types">
+                } else {
+                    echo <<<EOD
+                    <div class="typesShow">
                         <span class=$type1>$type1</span>
                     </div>
                     
@@ -124,22 +125,30 @@ require './data/db.php';
     <h1>Evolution</h1>
     <div class="pokemonEvo">
         <?php
-        if ($infos['evolution'] == "2") {
-            $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
-            $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($fetch as $infos) {
-                echo <<<EOD
+            if ($infos['evolution'] == "2") 
+            {
+                $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
+                $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+                foreach($fetch as $infos) 
+                {
+                    echo <<<EOD
+                        <figure>
                         <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
-                        <p class="pokeName">{$infos["name"]}</p>
+                        <figcaption class="pokeName">{$infos["name"]}</figcaption>
+                        </figure>
                     EOD;
-            }
-        } else if ($infos['evolution'] == "1") {
-            $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 2";
-            $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($fetch as $infos) {
-                echo <<<EOD
-                        <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
-                        <p class="pokeName">{$infos["name"]}</p>
+                }            
+            } 
+            else if ($infos['evolution'] == "1")
+            {
+                $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 2";
+                $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+                foreach($fetch as $infos) {
+                    echo <<<EOD
+                    <figure>
+                    <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
+                    <figcaption class="pokeName">{$infos["name"]}</figcaption>
+                    </figure>
                     EOD;
             }
         } else {
