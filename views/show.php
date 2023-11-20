@@ -1,10 +1,15 @@
-<?php 
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 $title = $_GET['name'];
 
-require_once __DIR__.'/partials/header.php';
+require_once __DIR__ . '/partials/header.php';
 require './data/db.php';
 
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,21 +29,51 @@ require './data/db.php';
             echo <<<EOD
                 <img class="imgpoke" src="../public/img/pokemon/$name.png" alt="$name Img" width="500px"><br />
             EOD;
-        }
+    }
     ?>
+    <?php
+    // check if the pokemon is in the user's favorites, if so, display a yellow star, if not, display a blueish star
+    require_once './controllers/accessdb.php';
 
+    $userId = $_SESSION['user_id'];
+
+
+    $stmt = $pdo->prepare('SELECT Favorites FROM users WHERE id = ?');
+    $stmt->execute([$userId]);
+    $user = $stmt->fetch();
+
+
+    if ($user && !empty($user['Favorites'])) {
+
+        $favorites = json_decode($user['Favorites'], true);
+
+
+        $isFavorite = in_array(strtolower($title), array_map('strtolower', $favorites));
+    } else {
+
+        $isFavorite = false;
+    }
+    // end of if the pokemon is in the user's favorites, display a yellow star, if not, display a blueish star
+    
+    ?>
     <div class="pokemonStat">
         <div class="favourite">
-            
+            <!-- code to display yellow and blueish star function of isFavorite var -->
+        <form method="post" action="./controllers/toggleFavorite.php">
+            <input type="hidden" name="pokemonName" value="<?php echo $title; ?>">
+            <button type="submit" style="background: none; border: none;">
+                <img src="../public/img/FavoriteStar/<?php echo $isFavorite ? 'starYellow.svg' : 'starBlueish.svg'; ?>" alt="<?php echo $isFavorite ? 'favorite' : 'not favorite'; ?>" width="50px">
+            </button>
+        </form>
         </div>
         <?php
-            $query = "SELECT * FROM Pokemon WHERE name = '$title'";
-            $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
-            foreach($fetch as $infos) {
-                $type1 = $infos["type1"];
-                $type2 = $infos["type2"];
+        $query = "SELECT * FROM Pokemon WHERE name = '$title'";
+        $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($fetch as $infos) {
+            $type1 = $infos["type1"];
+            $type2 = $infos["type2"];
 
-                echo <<<EOD
+            echo <<<EOD
                 <h1>{$infos["name"]}</h1> 
                 EOD;
                 if($type2 != "NULL") {
@@ -55,8 +90,8 @@ require './data/db.php';
                     </div>
                     
                     EOD;
-                }  
-                    echo <<<EOD
+            }
+            echo <<<EOD
                     <div class="pokeContent">
                         <ul class="pokeStat">
                             <li> HP: {$infos["hp"]}</li>
@@ -84,7 +119,7 @@ require './data/db.php';
                         </ul>
                     </div>
                 EOD;
-            }
+        }
         ?>
     </div>
     <h1>Evolution</h1>
@@ -115,19 +150,17 @@ require './data/db.php';
                     <figcaption class="pokeName">{$infos["name"]}</figcaption>
                     </figure>
                     EOD;
-                }
-            } 
-            else
-            {
-                echo <<<EOD
+            }
+        } else {
+            echo <<<EOD
                     <p class="evoError"> This pokemon doesn't evolve</p>
                 EOD;
-            }
-           
+        }
+
         ?>
     </div>
 </main>
 
-<?php 
-require_once __DIR__.'/partials/footer.php';
+<?php
+require_once __DIR__ . '/partials/footer.php';
 ?>
