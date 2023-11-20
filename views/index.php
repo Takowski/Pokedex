@@ -27,6 +27,9 @@ require_once __DIR__.'/partials/header.php';
         $DB = new PDO("mysql:host=localhost;dbname=pokemon;charset=utf8", "root", "root");
         $query = "SELECT * FROM Pokemon";
         $fetch = $DB->query($query)->fetchAll(PDO::FETCH_ASSOC);
+        echo <<<EOD
+            <div class="bigDiv">
+        EOD;
         
         foreach($fetch as $infos) {
             $name = str_replace([".", " "], "", strtolower($infos["name"]));
@@ -61,6 +64,9 @@ require_once __DIR__.'/partials/header.php';
             </div></a>
             EOD;
         }
+        echo <<<EOD
+            </div>
+        EOD;
     }
     catch(Exception $e)
 		{
