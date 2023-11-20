@@ -58,7 +58,12 @@ require './data/db.php';
     <div class="pokemonStat">
         <div class="favourite">
             <!-- code to display yellow and blueish star function of isFavorite var -->
-            <img src="../public/img/FavoriteStar/<?php echo $isFavorite ? 'starYellow.svg' : 'starBlueish.svg'; ?>" alt="<?php echo $isFavorite ? 'favorite' : 'not favorite'; ?>" width="50px">
+        <form method="post" action="./controllers/toggleFavorite.php">
+            <input type="hidden" name="pokemonName" value="<?php echo $title; ?>">
+            <button type="submit" style="background: none; border: none;">
+                <img src="../public/img/FavoriteStar/<?php echo $isFavorite ? 'starYellow.svg' : 'starBlueish.svg'; ?>" alt="<?php echo $isFavorite ? 'favorite' : 'not favorite'; ?>" width="50px">
+            </button>
+        </form>
         </div>
         <?php
         $query = "SELECT * FROM Pokemon WHERE name = '$title'";
