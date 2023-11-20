@@ -112,4 +112,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.addPokemon {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+}
+.addPokemon input, .addPokemon select {
+  border: 3px solid gray;
+  background-color: lightGray;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.addPokemonHTML {
+  background-color: rgb(201, 72, 72);
+}
+
+.addPokemonBody {
+  margin: 2rem;
 }/*# sourceMappingURL=style.css.map */
