@@ -6,10 +6,14 @@ require './data/db.php';
 
 
 ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Details</title>
+    <link rel="stylesheet" href="../sass/style.css">
+</head>
 
 <main>
-    <a href="/">Homepage</a>
-    <a href="/favorites">Favorites</a>
     
     <?php 
         $query = "SELECT * FROM Pokemon WHERE name = '$title'";
@@ -28,8 +32,10 @@ require './data/db.php';
             $query = "SELECT * FROM Pokemon WHERE name = '$title'";
             $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
             foreach($fetch as $infos) {
-
-                if ($infos['type2'] == "NULL") {
+                $type1 = $infos["type1"];
+                $type2 = $infos["type2"];
+                
+                if ($type2 == "NULL") {
                     $infos['type2'] = "";
                 } else {
                     $infos['type2'] = $infos['type2'];
@@ -37,9 +43,9 @@ require './data/db.php';
 
                 echo <<<EOD
                     <h1> {$infos["name"]}</h1>
-                    <h3> {$infos["type1"]}</h2>
-                    <h3> {$infos["type2"]}</h3>
-                    <ul>    
+                    <h3 class="$type1"> {$infos["type1"]}</h2>
+                    <h3 class="$type2">{$infos["type2"]}</h3>
+                    <ul class="pokeStat">    
                         <li> HP: {$infos["hp"]}</li>
                         <progress value="{$infos["hp"]}"
                         max="100">
@@ -67,18 +73,39 @@ require './data/db.php';
             }
         ?>
     </div>
+    <h1>Evolution</h1>
     <div class="pokemonEvo">
-        <h1>Evolution</h1>
         <?php
-
-            $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
-            $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
-            foreach($fetch as $infos) {
+            if ($infos['evolution'] == "2") 
+            {
+                $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 3";
+                $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+                foreach($fetch as $infos) 
+                {
+                    echo <<<EOD
+                        <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
+                        <p class="pokeName">{$infos["name"]}</p>
+                    EOD;
+                }            
+            } 
+            else if ($infos['evolution'] == "1")
+            {
+                $query = "SELECT * FROM Pokemon WHERE id >= '$id' ORDER BY id ASC LIMIT 2";
+                $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
+                foreach($fetch as $infos) {
+                    echo <<<EOD
+                        <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
+                        <p class="pokeName">{$infos["name"]}</p>
+                    EOD;
+                }
+            } 
+            else
+            {
                 echo <<<EOD
-                    <img src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
-                    <p>{$infos["name"]}</p>
+                    <p class="evoError"> This pokemon doesn't evolve</p>
                 EOD;
             }
+           
         ?>
     </div>
 </main>
