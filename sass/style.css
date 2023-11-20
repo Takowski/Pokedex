@@ -105,4 +105,11 @@ body {
 .details .pokemonDiv .name {
   font-weight: 900;
   font-size: 20px;
+}
+
+.pokemonEvo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
