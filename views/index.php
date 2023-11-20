@@ -33,7 +33,7 @@ require_once __DIR__.'/partials/header.php';
             $type1 = $infos["type1"];
             $type2 = $infos["type2"];
             echo <<<EOD
-            <div class="pokemonDiv">
+            <a href="/pokemon?name=$name"><div class="pokemonDiv">
                 <img src="../public/img/pokemon/$name.png" alt="$name Img" width="50px"><br />
                 <span>#$id</span><br />
             EOD;
@@ -57,7 +57,7 @@ require_once __DIR__.'/partials/header.php';
                 EOD;
             }
             echo <<<EOD
-            </div>
+            </div></a>
             EOD;
         }
     }
