@@ -1,5 +1,4 @@
 @import '../components/variables';
-@import '../components/pokemonCard';
 
 
 h1 {
@@ -7,38 +6,65 @@ h1 {
     font-weight: bold;
     padding-bottom: 1rem;
     text-align: center;
-}
-.pokeContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
 
+    border-bottom: 1px solid black;
+}
+figcaption{
+    text-align: center;
+    font-size: 12;
+}
+progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    appearance: none;
+    background-color: $pokemonWhite;
+}
+.evoImg{
+    border-radius: 50%;
+    padding: 7px;
+    width: 100px;
+    background-color: $pokemonDarkGray;
 }
 .pokemonEvo{
-    margin-left: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-.evoImg{
-    border-radius: 50%;
-    padding: 7px;
-    width: 100px;
-    background-color: white;
-}
-.pokeName{
-    padding-bottom: 3rem;
-    position: relative;
-    bottom: -90px;
-    left: -19.5%;
-    font-size: 1.5rem;
-    font-weight: bold;
+.pokeStat {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.pokeStat {
-    list-style: none;
+.pokeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgpoke{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: $pokemonDarkGray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

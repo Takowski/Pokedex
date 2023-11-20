@@ -21,7 +21,7 @@ require './data/db.php';
             $id = $infos["id"];
             $name = str_replace(["'", ".", " "], "", strtolower($infos["name"]));
             echo <<<EOD
-                <img src="../public/img/pokemon/$name.png" alt="$name Img" width="500px"><br />
+                <img class="imgpoke" src="../public/img/pokemon/$name.png" alt="$name Img" width="500px"><br />
             EOD;
         }
     ?>
@@ -96,8 +96,10 @@ require './data/db.php';
                 foreach($fetch as $infos) 
                 {
                     echo <<<EOD
+                        <figure>
                         <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
-                        <p class="pokeName">{$infos["name"]}</p>
+                        <figcaption class="pokeName">{$infos["name"]}</figcaption>
+                        </figure>
                     EOD;
                 }            
             } 
@@ -107,8 +109,10 @@ require './data/db.php';
                 $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
                 foreach($fetch as $infos) {
                     echo <<<EOD
-                        <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
-                        <p class="pokeName">{$infos["name"]}</p>
+                    <figure>
+                    <img class="evoImg" src="../public/img/pokemon/{$infos["name"]}.png" alt="{$infos["name"]} Img" width="100px"><br />
+                    <figcaption class="pokeName">{$infos["name"]}</figcaption>
+                    </figure>
                     EOD;
                 }
             } 
