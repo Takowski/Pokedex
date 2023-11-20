@@ -188,14 +188,31 @@ progress {
 }
 
 .imgpoke {
-  width: 70%;
-  height: 70%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  padding: 7px;
-  background-color: #a3a3a3;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  padding: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  background-color: #a3a3a3;
+}
+
+.typesShow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.typesShow span {
+  width: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

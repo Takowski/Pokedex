@@ -42,14 +42,14 @@ require './data/db.php';
                 EOD;
                 if($type2 != "NULL") {
                     echo <<<EOD
-                    <div class="types">
+                    <div class="typesShow">
                         <span class=$type1>$type1</span>
                         <span class=$type2>$type2</span>
                     </div>
                     EOD;
                 } else {
                     echo <<<EOD
-                    <div class="types">
+                    <div class="typesShow">
                         <span class=$type1>$type1</span>
                     </div>
                     
