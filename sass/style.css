@@ -46,63 +46,82 @@ body {
   text-align: center;
   gap: 1rem;
 }
-.details .pokemonDiv .Grass {
+
+.Grass {
   background-color: #49c05c;
 }
-.details .pokemonDiv .Poison {
+
+.Poison {
   background-color: #af60c5;
 }
-.details .pokemonDiv .Normal {
+
+.Normal {
   background-color: #89949c;
 }
-.details .pokemonDiv .Steel {
+
+.Steel {
   background-color: #4d8da1;
 }
-.details .pokemonDiv .Bug {
+
+.Bug {
   background-color: #88c437;
 }
-.details .pokemonDiv .Flying {
+
+.Flying {
   background-color: #87CEEB;
 }
-.details .pokemonDiv .Fire {
+
+.Fire {
   background-color: #fc9654;
 }
-.details .pokemonDiv .Fairy {
+
+.Fairy {
   background-color: #f47fe1;
 }
-.details .pokemonDiv .Water {
+
+.Water {
   background-color: #3b8bd2;
 }
-.details .pokemonDiv .Ground {
+
+.Ground {
   background-color: #e27144;
 }
-.details .pokemonDiv .Electric {
+
+.Electric {
   background-color: #fad340;
 }
-.details .pokemonDiv .Rock {
+
+.Rock {
   background-color: #c5b58a;
 }
-.details .pokemonDiv .Fighting {
+
+.Fighting {
   background-color: #dc2f69;
 }
-.details .pokemonDiv .Psychic {
+
+.Psychic {
   background-color: #ff6776;
 }
-.details .pokemonDiv .Ice {
+
+.Ice {
   background-color: #57cdbc;
 }
-.details .pokemonDiv .Ghost {
+
+.Ghost {
   background-color: #4b65aa;
 }
-.details .pokemonDiv .Dragon {
+
+.Dragon {
   background-color: #0068bf;
 }
-.details .pokemonDiv .types span {
+
+.types span {
   width: 15px;
   padding: 15px;
   border-radius: 10px;
 }
-.details .pokemonDiv .name {
+
+.name {
   font-weight: 900;
   font-size: 20px;
 }
