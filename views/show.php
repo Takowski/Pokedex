@@ -4,7 +4,6 @@ $title = $_GET['name'];
 require_once __DIR__.'/partials/header.php';
 require './data/db.php';
 
-
 ?>
 <head>
     <meta charset="UTF-8">
@@ -28,47 +27,61 @@ require './data/db.php';
     ?>
 
     <div class="pokemonStat">
+        <div class="favourite">
+            
+        </div>
         <?php
             $query = "SELECT * FROM Pokemon WHERE name = '$title'";
             $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);
             foreach($fetch as $infos) {
                 $type1 = $infos["type1"];
                 $type2 = $infos["type2"];
-                
-                if ($type2 == "NULL") {
-                    $infos['type2'] = "";
-                } else {
-                    $infos['type2'] = $infos['type2'];
-                }
 
                 echo <<<EOD
-                    <h1> {$infos["name"]}</h1>
-                    <h3 class="$type1"> {$infos["type1"]}</h2>
-                    <h3 class="$type2">{$infos["type2"]}</h3>
-                    <ul class="pokeStat">    
-                        <li> HP: {$infos["hp"]}</li>
-                        <progress value="{$infos["hp"]}"
-                        max="100">
-                        </progress>
-                        <li> Attack: {$infos["attack"]}</li>
-                        <progress value="{$infos["attack"]}"
-                        max="100">
-                        </progress>
-                        <li> Defense: {$infos["defense"]}</li>
-                        <progress value="{$infos["defense"]}"
-                        max="100">
-                        </progress>
-                        <li> Specific Defense: {$infos["spdefense"]}</li>
-                        <progress value="{$infos["spdefense"]}"
-                        max="100">
-                        </progress>
-                        <li> Specific Attack: {$infos["spattack"]}</li>
-                        <progress value="{$infos["spattack"]}"
-                        max="100">
-                        <li> Speed: {$infos["speed"]}</li>
-                        <progress value="{$infos["speed"]}"
-                        max="100">
-                    </ul>
+                <h1>{$infos["name"]}</h1> 
+                EOD;
+                if($type2 != "NULL") {
+                    echo <<<EOD
+                    <div class="types">
+                        <span class=$type1>$type1</span>
+                        <span class=$type2>$type2</span>
+                    </div>
+                    EOD;
+                } else {
+                    echo <<<EOD
+                    <div class="types">
+                        <span class=$type1>$type1</span>
+                    </div>
+                    
+                    EOD;
+                }  
+                    echo <<<EOD
+                    <div class="pokeContent">
+                        <ul class="pokeStat">
+                            <li> HP: {$infos["hp"]}</li>
+                            <progress value="{$infos["hp"]}"
+                            max="100">
+                            </progress>
+                            <li> Attack: {$infos["attack"]}</li>
+                            <progress value="{$infos["attack"]}"
+                            max="100">
+                            </progress>
+                            <li> Defense: {$infos["defense"]}</li>
+                            <progress value="{$infos["defense"]}"
+                            max="100">
+                            </progress>
+                            <li> Specific Defense: {$infos["spdefense"]}</li>
+                            <progress value="{$infos["spdefense"]}"
+                            max="100">
+                            </progress>
+                            <li> Specific Attack: {$infos["spattack"]}</li>
+                            <progress value="{$infos["spattack"]}"
+                            max="100">
+                            <li> Speed: {$infos["speed"]}</li>
+                            <progress value="{$infos["speed"]}"
+                            max="100">
+                        </ul>
+                    </div>
                 EOD;
             }
         ?>
