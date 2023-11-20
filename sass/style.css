@@ -239,6 +239,7 @@ body {
   }
 }
 .pokemonEvo {
+  margin-left: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -264,4 +265,25 @@ body {
 
 .addPokemonBody {
   margin: 2rem;
+  gap: 30px;
+}
+
+.evoImg {
+  border-radius: 50%;
+  padding: 7px;
+  width: 100px;
+  background-color: white;
+}
+
+.pokeName {
+  padding-bottom: 3rem;
+  position: relative;
+  bottom: -90px;
+  left: -19.5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pokeStat {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

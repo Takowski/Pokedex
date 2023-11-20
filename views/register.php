@@ -7,9 +7,11 @@ try
     echo "Connexion réussie !<br><br><br><br>";
 
 // Retrieve form data
-$FirstName = $_POST['FirstName'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$FirstName = $_POST['FirstName'] ? $_POST['FirstName'] : null;
+$email = $_POST['email'] ? $_POST['email'] : null;
+$password = $_POST['password'] ? $_POST['password'] : null;
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
 // Prepare SQL INSERT statement
 $sql = "INSERT INTO users (FirstName, email, password) VALUES (:FirstName, :email, :password )";
 
@@ -19,7 +21,7 @@ $stmt = $bdd->prepare($sql);
 // Bind parameters
 $stmt->bindParam(':FirstName', $FirstName);
 $stmt->bindParam(':email', $email);
-$stmt->bindParam(':password', $password);
+$stmt->bindParam(':password', $hashedPassword);
 
 // Execute statement
 $stmt->execute();
