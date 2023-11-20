@@ -13,7 +13,8 @@ require './data/db.php';
 </head>
 
 <main>
-    
+    <img class="pokedexDesign" src="./public/img/pokedex-design.png" alt="Pokedex Design">
+
     <?php 
         $query = "SELECT * FROM Pokemon WHERE name = '$title'";
         $fetch = $bdd->query($query)->fetchAll(PDO::FETCH_ASSOC);

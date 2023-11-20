@@ -10,11 +10,12 @@
 
 <body>
     <nav>
-    <ul>
-        <li><a href="/">Pokemon</a></li>
-        <li><a href="/myAccount">Myaccount</a></li>
-        <li><a href="/favorites">Favorites</a></li>
-        <li><a href="/register">register</a></li>
+    <ul class="navContent">
+        <li><a class="navItems" href="/">Pokemon</a></li>
+        <li><a class="navItems" href="/myAccount">My Account</a></li>
+        <li><img id="logo" src="./public/img/pokemon-logo.png" alt="pokemonLogo"></li>
+        <li><a class="navItems" href="/favorites">Favorites</a></li>
+        <li><a class="navItems" href="/register">Register</a></li>
     </ul>
     </nav>
 </body>

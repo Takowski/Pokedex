@@ -20,6 +20,36 @@ body {
   left: 0;
 }
 
+.navContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+}
+
+#logo {
+  width: 300px;
+}
+
+.navItems {
+  text-decoration: none;
+  color: #a3a3a3;
+  font-size: 1.5rem;
+}
+
+.navItems:hover {
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .details {
   text-decoration: none;
   color: black;
