@@ -20,7 +20,9 @@ body {
   left: 0;
 }
 
-.pokemonDiv {
+.details {
+  text-decoration: none;
+  color: black;
   background-color: #F1F1F1;
   width: 90%;
   padding-top: 2rem;
@@ -32,63 +34,75 @@ body {
   text-align: center;
   gap: 1rem;
 }
-.pokemonDiv .Grass {
+.details .pokemonDiv {
+  background-color: #F1F1F1;
+  width: 90%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.details .pokemonDiv .Grass {
   background-color: #49c05c;
 }
-.pokemonDiv .Poison {
+.details .pokemonDiv .Poison {
   background-color: #af60c5;
 }
-.pokemonDiv .Normal {
+.details .pokemonDiv .Normal {
   background-color: #89949c;
 }
-.pokemonDiv .Steel {
+.details .pokemonDiv .Steel {
   background-color: #4d8da1;
 }
-.pokemonDiv .Bug {
+.details .pokemonDiv .Bug {
   background-color: #88c437;
 }
-.pokemonDiv .Flying {
+.details .pokemonDiv .Flying {
   background-color: #87CEEB;
 }
-.pokemonDiv .Fire {
+.details .pokemonDiv .Fire {
   background-color: #fc9654;
 }
-.pokemonDiv .Fairy {
+.details .pokemonDiv .Fairy {
   background-color: #f47fe1;
 }
-.pokemonDiv .Water {
+.details .pokemonDiv .Water {
   background-color: #3b8bd2;
 }
-.pokemonDiv .Ground {
+.details .pokemonDiv .Ground {
   background-color: #e27144;
 }
-.pokemonDiv .Electric {
+.details .pokemonDiv .Electric {
   background-color: #fad340;
 }
-.pokemonDiv .Rock {
+.details .pokemonDiv .Rock {
   background-color: #c5b58a;
 }
-.pokemonDiv .Fighting {
+.details .pokemonDiv .Fighting {
   background-color: #dc2f69;
 }
-.pokemonDiv .Psychic {
+.details .pokemonDiv .Psychic {
   background-color: #ff6776;
 }
-.pokemonDiv .Ice {
+.details .pokemonDiv .Ice {
   background-color: #57cdbc;
 }
-.pokemonDiv .Ghost {
+.details .pokemonDiv .Ghost {
   background-color: #4b65aa;
 }
-.pokemonDiv .Dragon {
+.details .pokemonDiv .Dragon {
   background-color: #0068bf;
 }
-.pokemonDiv .types span {
+.details .pokemonDiv .types span {
   width: 15px;
   padding: 15px;
   border-radius: 10px;
 }
-.pokemonDiv .name {
+.details .pokemonDiv .name {
   font-weight: 900;
   font-size: 20px;
 }

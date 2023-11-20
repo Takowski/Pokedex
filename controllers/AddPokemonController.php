@@ -82,7 +82,7 @@ function addPokemon() {
 
     $prep->bindValue(1 , $num, PDO::PARAM_STR);
     $prep->bindValue(2 , $name, PDO::PARAM_STR);
-    $prep->bindValue(3 , NULL, PDO::PARAM_STR);
+    $prep->bindValue(3 , $img, PDO::PARAM_STR);
     $prep->bindValue(4 , $type1, PDO::PARAM_STR);
     $prep->bindValue(5 , $type2, PDO::PARAM_STR);
     $prep->bindValue(6 , $hp, PDO::PARAM_INT);
