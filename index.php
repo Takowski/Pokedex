@@ -75,7 +75,7 @@ switch ($url['path']) {
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Include the 'FavoritesController.php' file
-            require 'controllers/Favorites.php';
+            require 'controllers/favorites.php';
             // Call the function to display the favorites page
             favorites();
         } else {
