@@ -468,4 +468,51 @@ progress {
 
 .addPokemonBody {
   margin: 2rem;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+form form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form label {
+  color: #4CAF50;
+}
+form form input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form form input[type=submit] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
