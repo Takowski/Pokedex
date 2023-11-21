@@ -44,7 +44,7 @@ switch ($url['path']) {
         // Case: Handle /favorites path
     case '/register':
         // Check if the HTTP method is GET
-        if ($method == 'POST') {
+        if ($method == 'GET') {
             // Include the 'FavoritesController.php' file
             require 'views/register.php';
         } else {
