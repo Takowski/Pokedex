@@ -7,21 +7,23 @@ try
     echo "Connexion réussie !<br><br><br><br>";
 
 // Retrieve form data
-$FirstName = $_POST['FirstName'] ? $_POST['FirstName'] : null;
-$email = $_POST['email'] ? $_POST['email'] : null;
-$password = $_POST['password'] ? $_POST['password'] : null;
-$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+$FirstName = $_POST['FirstName'];
+$LastName = $_POST['LastName'] ;
+$email = $_POST['email'];
+$password = $_POST['password'] ;
+
 
 // Prepare SQL INSERT statement
-$sql = "INSERT INTO users (FirstName, email, password) VALUES (:FirstName, :email, :password )";
+$sql = "INSERT INTO users (FirstName, LastName, email, password) VALUES (:FirstName, :LastName, :email, :password )";
 
 // Prepare statement
 $stmt = $bdd->prepare($sql);
 
 // Bind parameters
 $stmt->bindParam(':FirstName', $FirstName);
+$stmt->bindParam(':LastName', $LastName);
 $stmt->bindParam(':email', $email);
-$stmt->bindParam(':password', $hashedPassword);
+$stmt->bindParam(':password', $password);
 
 // Execute statement
 $stmt->execute();
@@ -43,8 +45,10 @@ catch(Exception $e)
 <body>
 
 <form action="" method="post">
-  <label for="FirstName">Username</label><br>
+  <label for="FirstName">FirstName</label><br>
   <input type="text" id="FirstName" name="FirstName" required><br>
+  <label for="LastName">Lastname</label><br>
+  <input type="text" id="LastName" name="LastName" required><br>
   <label for="email">Email</label><br>
   <input type="email" id="email" name="email" required><br>
   <label for="password">Password</label><br>

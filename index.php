@@ -22,7 +22,7 @@ switch ($url['path']) {
         // Case: Handle other paths
     case '/pokemon':
         // Check if the HTTP method is GET
-        if ($method == 'GET') {
+        if ($method == 'POST') {
             // Parse the query string of the URL and store the result in the 'result' array
             parse_str($url['query'], $result);
             // Check if the 'pokemon' parameter is set in the query string
@@ -44,7 +44,7 @@ switch ($url['path']) {
         // Case: Handle /favorites path
     case '/register':
         // Check if the HTTP method is GET
-        if ($method == 'GET') {
+        if ($method == 'POST') {
             // Include the 'FavoritesController.php' file
             require 'views/register.php';
         } else {
@@ -84,13 +84,29 @@ switch ($url['path']) {
             // Set HTTP response code to 404 Not Found
             http_response_code(404);
         }    
+        break;
 
+        case '/search':
+            // Check if the HTTP method is GET
+            if ($method == 'GET') {
+                // Include the 'FavoritesController.php' file
+                 require 'views/search.php';
+                // Call the function to display the favorites page
+               
+            } else {
+                // If the HTTP method is not GET, include the 'views/errors/404.php' file
+                require 'views/errors/404.php';
+                // Set HTTP response code to 404 Not Found
+                http_response_code(404);
+            }  
+            break;  
         // Default case: Handle all other paths
     default:
         // Include the 'views/errors/404.php' file for unknown paths
         require 'views/errors/404.php';
         // Set HTTP response code to 404 Not Found
         http_response_code(404);
+    
         break;
 }
 
