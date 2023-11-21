@@ -10,13 +10,12 @@ require_once __DIR__.'/partials/header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex - Homepage</title>
     <link rel="stylesheet" href="../sass/style.css">
+    <link rel="icon" type="image/x-icon" href="./pokeball.png">
 </head>
 <body>
 <main>
     <img class="pokedexDesign" src="./public/img/pokedex-design.png" alt="Pokedex Design">
-    <h1>Pokedex - Homepage</h1>
-    <p>Hello  <strong><?php echo $user['name'] ?></p></strong>
-    <a href="/pokemon?name=pikachu">Pikachu</a>
+    <img class="pokedex" src="./public/img/pokedex-logo.png" alt="Pokedex">
 </main>
 <?php 
     ini_set('display_errors', 1);
@@ -26,6 +25,9 @@ require_once __DIR__.'/partials/header.php';
         $DB = new PDO("mysql:host=localhost;dbname=pokemon;charset=utf8", "root", "root");
         $query = "SELECT * FROM Pokemon";
         $fetch = $DB->query($query)->fetchAll(PDO::FETCH_ASSOC);
+        echo <<<EOD
+            <div class="bigDiv">
+        EOD;
         
         foreach($fetch as $infos) {
             $name = str_replace([".", " "], "", strtolower($infos["name"]));
@@ -60,6 +62,9 @@ require_once __DIR__.'/partials/header.php';
             </div></a>
             EOD;
         }
+        echo <<<EOD
+            </div>
+        EOD;
     }
     catch(Exception $e)
 		{

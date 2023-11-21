@@ -1,4 +1,4 @@
-@import "../components/_variables.scss";
+@import "../components/variables.scss";
 
 html {
     background-color: $pokemonRed;
@@ -18,4 +18,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+.pokedex{
+    margin-top: 1rem;
+    width: 235px;
 }

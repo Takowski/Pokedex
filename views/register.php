@@ -7,29 +7,28 @@ try
     echo "Connexion réussie !<br><br><br><br>";
 
 // Retrieve form data
-$FirstName = $_POST['FirstName'];
-$LastName = $_POST['LastName'] ;
-$email = $_POST['email'];
-$password = $_POST['password'] ;
-
+$FirstName = $_GET['FirstName'] ??   '';
+$lastName = $_GET['lastName'] ?? '';
+$email = $_GET['email'] ?? '';
+$password = $_GET['password'] ?? '';
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 // Prepare SQL INSERT statement
-$sql = "INSERT INTO users (FirstName, LastName, email, password) VALUES (:FirstName, :LastName, :email, :password )";
+$sql = "INSERT INTO users (FirstName, LastName, email, password) VALUES (:FirstName, :Lastname, :email, :password )";
 
 // Prepare statement
 $stmt = $bdd->prepare($sql);
 
 // Bind parameters
 $stmt->bindParam(':FirstName', $FirstName);
-$stmt->bindParam(':LastName', $LastName);
+$stmt->bindParam(':Lastname', $lastName);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':password', $password);
 
 // Execute statement
 $stmt->execute();
-
-// Redirect back to the form page
-//header('Location: form.php');
+header('Location: /myAccount');
+exit;
 }
 catch(Exception $e)
 {
@@ -44,11 +43,11 @@ catch(Exception $e)
 <html>
 <body>
 
-<form action="" method="post">
-  <label for="FirstName">FirstName</label><br>
+<form action="" method="get">
+  <label for="FirstName">Firstname</label><br>
   <input type="text" id="FirstName" name="FirstName" required><br>
-  <label for="LastName">Lastname</label><br>
-  <input type="text" id="LastName" name="LastName" required><br>
+  <label for="lastName">Lastname</label><br>
+  <input type="text" id="lastName" name="lastName" required><br>
   <label for="email">Email</label><br>
   <input type="email" id="email" name="email" required><br>
   <label for="password">Password</label><br>
