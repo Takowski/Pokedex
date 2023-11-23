@@ -16,6 +16,8 @@
         <li><img id="logo" src="./public/img/pokemon-logo.png" alt="pokemonLogo"></li>
         <li><a class="navItems" href="/favorites">Favorites</a></li>
         <li><a class="navItems" href="/register">Register</a></li>
+        <li><a class="navItems" href="/lgout">Logout</a></li>
+
     </ul>
     </nav>
 </body>
