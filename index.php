@@ -46,7 +46,8 @@ switch ($url['path']) {
         // Check if the HTTP method is GET
         if ($method == 'GET') {
             // Include the 'FavoritesController.php' file
-            require 'views/register.php';
+            require 'controllers/registerForm.php';
+            registerForm();
         } else {
             // If the HTTP method is not GET, include the 'views/errors/404.php' file
             require 'views/errors/404.php';
@@ -61,6 +62,22 @@ switch ($url['path']) {
         if ($method == 'GET') {
             // Include the 'account.php' file that contains the function
             require 'views/myAccount.php';
+            // Call the function to display the my account page
+
+        } else {
+            // If the HTTP method is not GET, include the 'views/errors/404.php' file
+            require 'views/errors/404.php';
+            // Set HTTP response code to 404 Not Found
+            http_response_code(404);
+        }
+        break;
+    
+    case '/logout':
+        // Check if the HTTP method is GET
+        if ($method == 'GET') {
+            // Include the 'account.php' file that contains the function
+            require 'views/logout.php';
+            logout();
             // Call the function to display the my account page
 
         } else {
