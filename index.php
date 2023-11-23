@@ -84,18 +84,7 @@ switch ($url['path']) {
             // Set HTTP response code to 404 Not Found
             http_response_code(404);
         }
-    case '/logout':
-        if ($method == 'GET') {
-            // Include the 'FavoritesController.php' file
-            require 'controllers/logout.php';
-            // Call the function to display the favorites page
-            logout();
-        } else {
-            // If the HTTP method is not GET, include the 'views/errors/404.php' file
-            require 'views/errors/404.php';
-            // Set HTTP response code to 404 Not Found
-            http_response_code(404);
-        }
+        break;
 
         // Default case: Handle all other paths
     default:
